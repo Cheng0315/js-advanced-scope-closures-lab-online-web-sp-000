@@ -14,3 +14,11 @@ function produceTipCalculator(tip) {
     return (tip/100 * fare * 100);
   }
 }
+
+function createDriver() {
+  let driverId = 0;
+
+  return class {
+
+  }
+}
