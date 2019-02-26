@@ -2,9 +2,9 @@ function produceDrivingRange(blockRange) {
   return function(arg1, arg2) {
     let range = Math.abs(parseInt(arg1.slice(0, -2) - parseInt(arg2.slice(0, -2))))
     if (range <= blockRange) {
-      return `within range by ${range}`
+      return `within range by ${Math.abs(range - blockRange)}`
     } else {
-      return `${range} blocks out of range`
+      return `${Math.abs(range - blockRange)} blocks out of range`
     }
   }
 }
